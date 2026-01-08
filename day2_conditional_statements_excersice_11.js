@@ -23,16 +23,24 @@ let rock = "rock";
 let paper = "paper";
 let scissors = "scissors";
 
-// these two variables will be changed to test the conditional
-let firstPlayerChoice;
-let secondPlayerChoice;
+let firstPlayerChoice = rock;
+let secondPlayerChoice = rock;
 
-let firstPossibility;
-let secondPossibility;
-let thirdPossibility;
+let firstPossibility = firstPlayerChoice === rock && secondPlayerChoice === scissors;
+secondPossibility = firstPlayerChoice === scissors && secondPlayerChoice === paper;
+thirdPossibility = firstPlayerChoice === paper && secondPlayerChoice === rock;
+fourthPossibility = secondPlayerChoice === rock && firstPlayerChoice === scissors;
+fifthPossibility = secondPlayerChoice === scissors && firstPlayerChoice === paper;
+sixthPossibility = secondPlayerChoice === paper && firstPlayerChoice === rock;
+seventhPossibility = firstPlayerChoice === secondPlayerChoice;
 
-let fourthPossibility;
-let fifthPossibility;
-let sixthPossibility;
+if (firstPossibility || secondPossibility || thirdPossibility) {
+  console.log(`first player won!`);
+} else if (fourthPossibility || fifthPossibility || sixthPossibility) {
+  console.log(`second player won!`);
+} else if (seventhPossibility) {
+  console.log(`it's a tie!`);
+} else {
+  console.log(`something went wrong!`);
+}
 
-let seventhPossibility;

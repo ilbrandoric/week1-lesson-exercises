@@ -7,22 +7,23 @@ To check your code, try changing the value of the variable country to "Mexico", 
 */
 
 let language;
-const country = "Spain"; // "Mexico", "France", "Brazil"
+const country = "USA"; // "Mexico", "France", "Brazil"
 
+switch (country) {
 
-// Convert the following into a switch statement:
-if (country === "Spain" || country === "Mexico") {
-  language = "es";
-}
-else if (country === "France") {
-  language = "fr";
-}
-else if (country === "Brazil") {
-  language = "pt";
-}
-else {
-  language = "en";
+  case "spain":
+  case "Mexico":
+      language = "es";
+       break;
+  case "France":
+      language = "fr";
+      break;
+  case "Brazil":
+      language = "pt";
+      break;
+  default:
+      language = "en";
+      break;
 }
 
-// Check your code:
 console.log(`https://mywebsite.com/${language}`);
