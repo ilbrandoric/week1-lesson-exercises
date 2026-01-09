@@ -6,6 +6,8 @@ Round the sum to two decimals. Use console.log() to print out the value of the s
 
 */
 
+//This is an array. It has [] containing numbers
+
 const prices = [10.99, 44.56, 112.79, 3, 5];
 let sum = 0; // start value for the sum
 

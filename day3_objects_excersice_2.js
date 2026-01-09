@@ -1,3 +1,6 @@
+
+//This is an object. It has {}
+
 const car = {
   make: "Ford" ,
   model: "Mustang",
