@@ -66,7 +66,7 @@ const data = [
 
 // Function to group animals by species
 
-function groupAnimals(data) {
+function sortProducts(data) {
 
   const result = {}; // Empty object to hold the grouped animals
 
@@ -98,5 +98,5 @@ function groupAnimals(data) {
 
 // Call the function and log the result
 
-const groupedAnimals = groupAnimals(data);
+const groupedAnimals = sortProducts(data);
 console.log(groupedAnimals)
